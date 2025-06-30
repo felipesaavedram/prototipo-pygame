@@ -4,36 +4,46 @@ import pygame
 from pygame.locals import *
 
 #-----------------------------------------------------------------------------
+### 5 - CLASES:
+
+# from classes.player import Player
+# from classes.platform import Platform
+# from classes.coin import Coin
+
+
+
+#-----------------------------------------------------------------------------
 ### 2 - VARIABLES GLOBALES
 
 # TAMAÑO PANTALLA
 
-HEIGHT = 600
-WIDTH = 600
+HEIGHT = 1000
+WIDTH = 700
 
 # FPS
 
 FPS = 60
 
-# COLORES
-DARKRED = (pygame.Color("darkred"))
-
 # ICONO DE PROGRAMA
-ICON = pygame.image.load("assets/imgs/icon.png")
+ICON = pygame.image.load("assets/imgs/icon.jpg")
 
 # FONDO DE PROGRAMA
 
 BACKGROUND =  pygame.image.load("assets/imgs/background.jpg")
 
+# IMAGEN DE PERSONAJE
+
+PLAYER = pygame.image.load("assets/imgs/player.png")
+
 #-----------------------------------------------------------------------------
-### 3 - INICIALIZACIÓN
+### 3 - INICIALIZACIÓN:
  
 pygame.init()
 window = pygame.display.set_mode((WIDTH,HEIGHT))
 
 pygame.display.set_icon(ICON)
 
-pygame.display.set_caption(" THE NYAN-CUT   /ᐠ - ˕ -マ Ⳋ")
+pygame.display.set_caption("  /ᐠ - ˕ -マ Ⳋ  Fortunyan  ")
 def main():
     clock = pygame.time.Clock()
     
@@ -46,10 +56,8 @@ def main():
                 run = False
                 break
 
-        window.fill(DARKRED)
-        #window.fill(pygame.Color("deepskyblue4"))
-        
-        window.blit(BACKGROUND, (0,0))
+                
+        window.blit(BACKGROUND, (0,-300))
 
 
         pygame.display.update()
@@ -60,6 +68,7 @@ if __name__=="__main__":
 
 
 #-----------------------------------------------------------------------------
+### 6 - INSTANCIA DE OBJETOS:
 
 
 #-----------------------------------------------------------------------------
