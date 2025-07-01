@@ -1,5 +1,3 @@
-# CLASSES/coin.py
-
 import pygame
 import os
 

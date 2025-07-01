@@ -1,5 +1,3 @@
-# CLASSES/player.py
-
 import pygame
 import os 
 

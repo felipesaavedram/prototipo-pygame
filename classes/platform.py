@@ -1,5 +1,3 @@
-# CLASSES/platform.py
-
 import pygame
 import os
 

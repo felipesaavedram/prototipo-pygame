@@ -1,8 +1,16 @@
-# main.py
+#--------------------------------------------------#
+#
+#                   INTEGRANTES
+#
+#                   Paola Leiva
+#                   Felipe Saavedra
+#
+#
+#----------------------------------------------------#
+
 
 ### 1 - IMPORTS
 import pygame
-import sys
 import os
 
 from pygame.locals import *
